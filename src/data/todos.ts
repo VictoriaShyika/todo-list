@@ -6,15 +6,20 @@ export enum TodosActionTypes {
 
 interface AddTodosAction {
   type: TodosActionTypes.ADD_TODO;
-  payload: any;
+  payload: {
+    title: string;
+    description?: string;
+    id: string;
+    isChecked: boolean;
+  };
 }
 interface ChangeTodoStatusAction {
   type: TodosActionTypes.CHANGE_TODO_STATUS;
-  payload: { id: any; isChecked: boolean };
+  payload: { id: string; isChecked: boolean };
 }
 interface DeleteTodoAction {
   type: TodosActionTypes.DELETE_TODO;
-  payload: any;
+  payload: string;
 }
 
 export type TodosAction =

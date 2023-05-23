@@ -9,7 +9,7 @@ export const TodoForm = () => {
 
   const onSubmit = (values: FormikValues, { resetForm }: any) => {
     const { title, description } = values;
-    addingTodo(title, description, new Date().toISOString());
+    addingTodo(title, new Date().toISOString(), description);
     resetForm({ values: '' });
   };
 

@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { Wrapper, StyledInput, ErrorText } from './styled';
 
 interface Props {
-  id?: string;
+  id: string;
   name?: string;
   placeholder?: string;
   validate?: Function;

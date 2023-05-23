@@ -1,4 +1,3 @@
-import { FC } from 'react';
 import { Formik, FormikValues } from 'formik';
 import { useActions } from '../../hooks/useAction';
 import { Input } from '../Input';
